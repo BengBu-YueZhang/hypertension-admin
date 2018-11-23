@@ -13,10 +13,10 @@ function RouterConfig({ history }) {
   return (
     <Router history={history}>
       <Switch>
-        <Redirect from="/" to="/login" />
         <Route path="/login" component={Login} />
         <Route render={ props => isAuth() ? <BodyWeight {...props} /> : <Redirect to={`/login`} /> } />
         <Route render={ props => isAuth() ? <BloodPressure {...props} /> : <Redirect to={`/login`} /> } />
+        <Redirect from="/" to="/login" />
       </Switch>
     </Router>
   );

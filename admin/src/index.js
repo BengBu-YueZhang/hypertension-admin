@@ -7,6 +7,8 @@ const app = dva();
 // app.use({});
 
 app.model(require('./models/login').default)
+app.model(require('./models/bodyWeight').default)
+app.model(require('./models/bloodPressure').default)
 
 // 4. Router
 app.router(require('./router').default);
