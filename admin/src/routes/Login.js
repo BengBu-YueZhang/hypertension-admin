@@ -1,9 +1,15 @@
 import React from 'react'
 
 class LoginPage extends React.Component {
+
+  componentDidMount () {
+  }
+
   render () {
     return (
-      <section></section>
+      <section>
+        登录页
+      </section>
     )
   }
 }
