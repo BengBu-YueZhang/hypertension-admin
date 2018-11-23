@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('https://unsplash.it/1920/1080?random');
+  background-size: cover;
+}
+
+.formWrapper {
+  width: 320px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #eee;
+  padding: 40px;
+  box-sizing: content-box;
+  border-radius: 3px;
+}
+
+.title {
+  line-height: 40px;
+  text-align: center;
+}
